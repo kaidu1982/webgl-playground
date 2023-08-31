@@ -3,11 +3,13 @@
         <h2>Example</h2>
         <div class="menu" @click="routerPush('BoxExample')">BoxExample</div>
         <div class="menu" @click="routerPush('Hexagon')">Hexagon</div>
+        <div class="menu" @click="routerPush('Babylonjs')">Babylonjs</div>
     </div>
 </template>
 
 <script lang="ts" setup>
 import { routerPush } from '@/router.js';
+import Babylonjs from '@/pages/Babylonjs.vue';
 </script>
 
 <style lang="scss" scoped>

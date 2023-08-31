@@ -4,12 +4,11 @@ import MainTemplate from '@/layout/MainTemplate.vue';
 import ImageToAscii from '@/pages/ImageToAscii.vue';
 import WaveFunctionCollapse from '@/pages/WaveFunctionCollapse.vue';
 import CameraToAscii from '@/pages/CameraToAscii.vue';
-import BoxExample from "@/pages/BoxExample.vue";
-import Hexagon from "@/pages/Hexagon.vue";
+import BoxExample from '@/pages/BoxExample.vue';
+import Hexagon from '@/pages/Hexagon.vue';
+import Babylonjs from '@/pages/Babylonjs.vue';
 
-export type AppRouteNames =
-'Hexagon'    | 'BoxExample';
-
+export type AppRouteNames = 'Hexagon' | 'BoxExample';
 
 export const routes: RouteRecordRaw[] = [
     {
@@ -26,6 +25,11 @@ export const routes: RouteRecordRaw[] = [
                 name: 'Hexagon',
                 path: 'hexagon',
                 component: Hexagon,
+            },
+            {
+                name: 'Babylonjs',
+                path: 'babylonjs',
+                component: Babylonjs,
             },
         ],
     },

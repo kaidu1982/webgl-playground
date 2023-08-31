@@ -24,12 +24,13 @@ onMounted(async () => {
         renderer.setSize(width, height);
         hexagonRef.value.appendChild(renderer.domElement);
 
-        const geometry = new THREE.BoxGeometry(1, 1, 1);
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const geometry = new THREE.CylinderGeometry(5, 5, 2, 6);
+
+        const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
         const cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
 
-        camera.position.z = 5;
+        camera.position.z = 15;
 
         function animate() {
             requestAnimationFrame(animate);
